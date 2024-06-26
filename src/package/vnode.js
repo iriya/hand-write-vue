@@ -156,8 +156,25 @@ const cloneIfMounted = (child) => {
 }
 
 const cloneVNode = (vnode) => {
+  const { props, children } = vnode
   const cloned = {
-    ...vnode
+    __v_isVNode: true,
+    props: props,
+    type: vnode.type,
+    children: isArray(children) ? children.map(deepCloneVNode) : children,
+    shapeFlag: vnode.shapeFlag,
+    appContext: vnode.appContext,
+    component: vnode.component,
+    el: vnode.el,
+    ctx: vnode.ctx
+  }
+  return cloned
+}
+
+const deepCloneVNode = (vnode) => {
+  const cloned = cloneVNode(vnode)
+  if (isArray(vnode.children)) {
+    cloned.children = (vnode.children).map(deepCloneVNode)
   }
   return cloned
 }

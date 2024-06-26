@@ -1,8 +1,14 @@
+import { h } from './package/vue.js'
+
 const HelloWorld = {
-  template() {
-    return `
-      <div>Hello World</div>
-    `
+  props: {
+    title: 'ABCD1234fox',
+    sunset: 18
+  },
+  setup(props) {
+    return function render() {
+      return h('div', 'hello from ' + props.title + ', sunset=' + props.sunset)
+    }
   }
 }
 

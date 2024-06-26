@@ -49,6 +49,7 @@ export const isFunction = (obj) => {
 export const isArray = Array.isArray
 
 export const EMPTY_OBJ = {}
+export const EMPTY_ARR = []
 
 export const NO_OP = () => {}
 
