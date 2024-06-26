@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "mime": "^4.0.3"
+  }
+}
