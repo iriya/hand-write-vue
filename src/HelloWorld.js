@@ -1,7 +1,7 @@
 import { h } from './package/vue.js'
 
 const HelloWorld = {
-  props: {
+  defaultProps: {
     title: 'ABCD1234fox',
     sunset: 18
   },

@@ -226,7 +226,7 @@ const baseCreateRenderer = (options) => {
   }
   const initProps = (instance, rawProps) => { 
     const props = {}
-    const { props: defaultProps } = instance.type
+    const { defaultProps } = instance.type
     if (defaultProps) {
       for (let key in defaultProps) {
         props[key] = defaultProps[key]
