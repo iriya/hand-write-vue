@@ -1,0 +1,8 @@
+{
+  "name": "hand-write-vue-compiler",
+  "version": "1.0.0",
+  "description": "Learn vue3 compiler bit by bit",
+  "license": "MIT",
+  "type": "module",
+  "module": "index.js"
+}

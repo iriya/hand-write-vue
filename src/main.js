@@ -1,5 +1,5 @@
 import { createApp, h, reactive } from 'hand-write-vue'
-// import HelloWorld from './HelloWorld.js'
+import HelloWorld from './HelloWorld.js'
 
 const app = {
   setup() {
@@ -20,7 +20,7 @@ const app = {
         h('p', state.count),
         h('button', {'onClick': handleIncr}, 'INCR'),
         h('button', {class: 'primary', 'onClick': handleDecr}, 'DECR'),
-        // h(HelloWorld, {title: '666'})
+        h(HelloWorld, {title: '666'})
       ])
     }
   }
