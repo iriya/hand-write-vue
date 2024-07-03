@@ -1,9 +1,24 @@
 {
   "scripts": {
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build": "webpack"
   },
+  "name": "test-hand-write-vue",
+  "version": "1.0.0",
+  "description": "A project to test hand-write-vue",
+  "license": "MIT",
   "type": "module",
+  "private": true,
+  "workspaces": [
+    "packages/core"
+  ],
   "dependencies": {
+    "hand-write-vue": "workspace:^1.0.0",
     "mime": "^4.0.3"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.5.2",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
   }
 }

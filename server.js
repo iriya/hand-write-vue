@@ -8,7 +8,7 @@ import mime from 'mime'
 const server = http.createServer((req, res) => {
   const __filename = fileURLToPath(import.meta.url)
   const __dirname = path.dirname(__filename)
-  const filePath = req.url === '/' ? path.join(__dirname, 'public', 'index.html') : path.join(__dirname, 'src', req.url)
+  const filePath = path.join(__dirname, 'dist', req.url === '/' ? 'index.html' : req.url)
   const fileExt = path.extname(filePath)
   
   // 设置默认Content-Type

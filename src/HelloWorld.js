@@ -1,4 +1,4 @@
-import { h } from './package/vue.js'
+import { h } from 'hand-write-vue'
 
 const HelloWorld = {
   defaultProps: {
