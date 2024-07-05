@@ -1,3 +1,6 @@
-import { createApp, h, reactive } from './vue.js'
+import { createApp } from './vue.js'
+import { h, createVNode } from './vnode.js'
+import { reactive } from './reactive.js'
 
-export { createApp, h, reactive };
+
+export { createApp, reactive, h, createVNode };

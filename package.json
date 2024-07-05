@@ -15,7 +15,7 @@
   ],
   "dependencies": {
     "hand-write-vue": "workspace:^1.0.0",
-    "hand-write-vue-compiler": "workspace:^1.0.0", 
+    "hand-write-vue-compiler": "workspace:^1.0.0",
     "mime": "^4.0.3"
   },
   "devDependencies": {

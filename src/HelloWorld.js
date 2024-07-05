@@ -7,7 +7,8 @@ const HelloWorld = {
   },
   setup(props) {
     return function render() {
-      return h('div', 'hello from ' + props.title + ', sunset=' + props.sunset)
+      // return h('div', 'hello from ' + props.title + ', sunset=' + props.sunset)
+      return <div>hello from {props.title}, sunset={props.sunset}</div>
     }
   }
 }

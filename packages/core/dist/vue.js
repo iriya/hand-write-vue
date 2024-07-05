@@ -1,9 +1,7 @@
 import { baseCreateRenderer } from './render.js'
-import { h } from './vnode.js'
 import { nodeOps } from './dom.js'
 import { patchProp } from './patchprop.js'
 import { extend } from './shared.js'
-import { reactive } from './reactive.js'
 
 const createApp = (...args) => {
   const app = createRender().createApp(...args)
@@ -25,7 +23,5 @@ const createRender = () => {
 }
 
 export {
-  createApp,
-  h,
-  reactive
+  createApp
 }
